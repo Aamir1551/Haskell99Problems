@@ -1,2 +1,3 @@
 # Haskell99Problems
-Practising Haskell 
+Doing all 99 problems in Haskell
+Link: https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems
