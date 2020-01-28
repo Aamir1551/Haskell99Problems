@@ -22,3 +22,14 @@ getNitem (x:xs) n = if n>=1
     then getNitem xs (n-1)
     else Nothing
 getNitem [] n = Nothing
+
+------------------------------------------------------
+
+
+data Shape m = Circle m | Rectangle Bool m deriving Show --Rectangle -- try it with rectable as well - so put 2 different vlaue constructors
+
+instance Functor Shape where  
+    fmap f (Rircle m) = Circle (f m)
+    fmap f ((Rectangle Bool) m) = ( (Rectangle Bool) (f m))
+
+main = do putStrLn (show (fmap (*2) (Circle 10)))
