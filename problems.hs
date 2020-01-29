@@ -34,6 +34,7 @@ instance Functor Shape where
     fmap f ((Rectangle Bool) m) = ( (Rectangle Bool) (f m))
 
 main = do putStrLn (show (fmap (*2) (Circle 10)))
+<<<<<<< HEAD
 -}
 
 {-
@@ -67,3 +68,5 @@ quicksort [a] = [a]
 quicksort l@(x:_) = (quicksort (tail s)) ++ [x] ++ (quicksort b)
     where (b, s) = bns l
 
+=======
+>>>>>>> 732e2547777eb85302096cd7bbf0fcc4b8b4abf1
